@@ -26,8 +26,23 @@ Route::get('/admin', function () {
 
 Route::group(['prefix' => '/admin'], function()
 {
-	//AUTH STAFF
+	//AUTH ADMIN
 	Route::get('login', 'Admin\AuthController@showLogin')->name('admin.showlogin');
-	// Route::post('login','Staff\AuthStaffController@login')->name('staff.login');
-	// Route::post('logout','Staff\AuthStaffController@logoutStaff')->name('staff.logout');
+	// Route::post('login','Admin\AuthController@login')->name('admin.login');
+	// Route::post('logout','Admin\AuthController@logout')->name('admin.logout');
+});
+Route::group(['prefix' => '/'], function()
+{
+	//AUTH USER
+	Route::get('login', 'User\AuthController@showLogin')->name('user.showlogin');
+	Route::post('login','User\AuthController@login')->name('user.login');
+	Route::post('logout','User\AuthController@logout')->name('user.logout');
+
+	// HOME
+	Route::get('home', 'User\HomeController@index')->name('user.home');
+
+	// PROFILE
+    Route::name('user.profile.')->group(function () {
+        Route::patch('/profile/update', 'User\HomeController@editProfile')->name('update');
+    });
 });

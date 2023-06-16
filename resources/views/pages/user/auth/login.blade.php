@@ -21,7 +21,7 @@
     <meta property="og:type" content="website">
 
     <!--title-->
-    <title>Login Administrator | Pesawat - BPJS Kesehatan</title>
+    <title>Login | Pesawat - BPJS Kesehatan</title>
 
     <!--favicon icon-->
     <link rel="icon" href="{{ asset('assets/images/icon/logo.ico') }}" sizes="32x32">
@@ -150,7 +150,7 @@
                     <div class="card login-signup-card shadow-lg mb-0">
                         <div class="card-body px-md-5 py-5">
                             <div class="mb-2">
-                                <h5 class="h3">Login Administrator</h5>
+                                <h5 class="h3">Login</h5>
                                 <p class="text-muted mb-0">Masuk dengan akun Anda untuk melanjutkan.</p>
                             </div>
                             <!--login form-->
@@ -199,7 +199,7 @@
                             </form>
                         </div>
                         <div class="card-footer border-top px-md-5 text-center" style="background-color: #fffffe;">
-                            <a href="https://bpjs-kesehatan.go.id/bpjs/"><img src="{{  asset('assets/images/logo/logo-bpjs.png') }}" alt="logo-bpjs" srcset="{{  asset('assets/images/logo/logo-bpjs.png 15x') }}"></a>
+                            <a href="https://bpjs-kesehatan.go.id/bpjs"><img src="{{  asset('assets/images/logo/logo-bpjs.png') }}" alt="logo-bpjs" srcset="{{  asset('assets/images/logo/logo-bpjs.png 15x') }}"></a>
                         </div>
                     </div>
                 </div>
