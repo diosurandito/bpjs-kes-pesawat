@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="{{ config('app.locale') }}">
-@include('templates.user.partials._head')
+@include('templates.admin.partials._head')
 <body>
   <div id="page-container" class="sidebar-o sidebar-dark @if(Request::is('#')) sidebar-mini @endif enable-page-overlay side-scroll page-header-dark page-header-fixed">
     <!-- Sidebar -->
-    @include('templates.user.partials._sidebar')
+    @include('templates.admin.partials._sidebar')
     <!-- End Sidebar -->
     <!-- Header -->
-    @include('templates.user.partials._header')
+    @include('templates.admin.partials._header')
     <!-- End Header -->
 
     <!-- Content  -->
@@ -102,7 +102,7 @@
 
     <!-- END Footer -->
   </div>
-  @include('templates.user.partials._script')
+  @include('templates.admin.partials._script')
   <script>
     document.addEventListener('DOMContentLoaded', function() {
         const inputs = Array.from(

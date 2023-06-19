@@ -51,7 +51,7 @@
                             <span>Log Out</span>
                             <i class="fa fa-sign-out-alt ml-2 text-danger"></i>
                         </a>
-                        <form id="logout-form" action="{{ route('user.logout') }}" method="POST" style="display: none;">
+                        <form id="logout-form" action="{{ route('admin.logout') }}" method="POST" style="display: none;">
                             @csrf
                         </form>
 

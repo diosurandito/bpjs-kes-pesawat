@@ -5,7 +5,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>
-        @if (Request::is('home')) Home | Pesawat - BPJS Kesehatan @endif
+        @if (Request::is('admin/home')) Home | Administrator Pesawat - BPJS Kesehatan @endif
     </title>
 
     <meta name="description" content="Pesawat">

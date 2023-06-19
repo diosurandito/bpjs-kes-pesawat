@@ -3248,32 +3248,32 @@ a.pricing-value {
 .loader1 span:nth-child(1) {
     -webkit-animation-delay: -1s;
     animation-delay: -1s;
-    background:  rgba(230, 47, 41, 0.6);
+    background:  rgba(41, 230, 88, 0.6);
 }
 
 .loader1 span:nth-child(2) {
     -webkit-animation-delay: -0.8s;
     animation-delay: -0.8s;
-    background:  rgba(230, 60, 41, 0.8);
+    background:  rgba(41, 230, 88, 0.8);
 }
 
 .loader1 span:nth-child(3) {
     -webkit-animation-delay: -0.26666s;
     animation-delay: -0.26666s;
-    background: rgb(230, 41, 41);
+    background: rgb(41, 230, 88);
 }
 
 .loader1 span:nth-child(4) {
     -webkit-animation-delay: -0.8s;
     animation-delay: -0.8s;
-    background:  rgba(230, 41, 41, 0.8);
+    background:  rgba(41, 230, 88, 0.8);
 
 }
 
 .loader1 span:nth-child(5) {
     -webkit-animation-delay: -1s;
     animation-delay: -1s;
-    background:  rgba(230, 41, 41, 0.4);
+    background:  rgba(41, 230, 88, 0.4);
 }
 
 @keyframes loader1 {

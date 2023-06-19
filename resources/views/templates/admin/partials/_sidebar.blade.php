@@ -16,7 +16,7 @@
     <div class="content-side content-side-full">
         <ul class="nav-main">
             <li class="nav-main-item">
-                <a class="nav-main-link @if (Request::is('home')) active @endif" href="{{route('user.home')}}">
+                <a class="nav-main-link @if (Request::is('admin/home')) active @endif" href="{{route('admin.home')}}">
                     <i class="nav-main-link-icon fa fa-home"></i>
                     <span class="nav-main-link-name">Home</span>
                 </a>

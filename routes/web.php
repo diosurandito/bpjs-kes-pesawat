@@ -26,10 +26,20 @@ Route::get('/admin', function () {
 
 Route::group(['prefix' => '/admin'], function()
 {
-	//AUTH ADMIN
-	Route::get('login', 'Admin\AuthController@showLogin')->name('admin.showlogin');
-	// Route::post('login','Admin\AuthController@login')->name('admin.login');
-	// Route::post('logout','Admin\AuthController@logout')->name('admin.logout');
+	Route::name('admin.')->group(function () {
+		//AUTH ADMIN
+		Route::get('login', 'Admin\AuthController@showLogin')->name('showlogin');
+		Route::post('login','Admin\AuthController@login')->name('login');
+		Route::post('logout','Admin\AuthController@logout')->name('logout');
+
+		// HOME
+		Route::get('home', 'Admin\HomeController@index')->name('home');
+	});
+	
+	// PROFILE
+    Route::name('admin.profile.')->group(function () {
+        Route::patch('/profile/update', 'Admin\HomeController@editProfile')->name('update');
+    });
 });
 Route::group(['prefix' => '/'], function()
 {

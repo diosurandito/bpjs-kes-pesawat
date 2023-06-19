@@ -30,7 +30,7 @@ class AuthController extends Controller
         ];
 
         if (Auth::guard('web')->attempt($credentials)){
-            return redirect()->route('user.home.index');
+            return redirect()->route('user.home');
             
         }
         return redirect()->back()->withInput($request->only('username'))->with('alert','Username atau Password salah, silahkan coba lagi.');

@@ -154,7 +154,7 @@
                                 <p class="text-muted mb-0">Masuk dengan akun Anda untuk melanjutkan.</p>
                             </div>
                             <!--login form-->
-                            <form class="login-signup-form" action="#" method="POST">
+                            <form class="login-signup-form" action="{{ route('user.login') }}" method="POST">
                                 @csrf
                                 @if(\Session::has('alert'))
                                 <div class="alert">

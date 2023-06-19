@@ -1,4 +1,4 @@
-@extends('templates.user.default')
+@extends('templates.admin.default')
 
 @section('content')
 
@@ -10,7 +10,7 @@
             <div class="content content-narrow content-full">
                 <div class="d-flex flex-column flex-sm-row justify-content-sm-between align-items-sm-center mt-5 mb-2 text-center text-sm-left">
                     <div class="flex-sm-fill">
-                        <h1 class="font-w600 text-white mb-0 invisible" data-toggle="appear">Pesawat - BPJS Kesehatan</h1>
+                        <h1 class="font-w600 text-white mb-0 invisible" data-toggle="appear">Administrator Pesawat - BPJS Kesehatan</h1>
                         <h2 class="h4 font-w400 text-white-75 mb-0 invisible" data-toggle="appear" data-timeout="250">{{ Auth::user()->nama }} ({{ Auth::user()->jabatan }})</h2>
                     </div>
                     <div class="flex-sm-00-auto mt-3 mt-sm-0 ml-sm-3">
@@ -65,5 +65,5 @@
 @endsection
 
 @section('page-script')
-    @include('templates.user.partials.scripts._home')
+    @include('templates.admin.partials.scripts._home')
 @endsection
